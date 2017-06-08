@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+    <title>Banner</title>
+</head>
+
+<body onLoad="init();">
+	
+    <!-- DCM (DoubleClick Campaign Manager) & DFA (DoubleClick For Advertisers) Generic Click Through -->
+    <!-- <script> var clickTag = "https://www.google.com/"; </script> -->
+    <!-- <a href="javascript:window.open(window.clickTag)"> -->
+
+	<div id="banner">
+
+        <!-- Frame 1 -->
+        <div id="frame-1">
+            <img src="copy1.png" class="asset" id="frame1-copy" />
+            <img src="chrome.png" class="asset" id="frame1-image" />
+        </div>
+
+        <!-- Frame 2 -->
+        <div id="frame-2">
+            <img src="copy2.png" class="asset" id="frame2-copy" />
+            <img src="text.png" class="asset" id="frame2-text" />
+            <img src="firefox.png" class="asset" id="frame2-image" />
+        </div>
+
+        <!-- Frame 3 -->
+        <div id="frame-3">
+            <img src="copy3.png" class="asset" id="frame3-copy" />
+        </div>
+
+        <!-- Lockup -->
+        <img src="lockup.jpg" id="lockup" />
+
+    </div>
+
+    <!-- Google CDN (for DCS/DCM) for GSAP -->
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.0_643d6911392a3398cb1607993edabfa7_min.js"></script>
+
+    <!-- Sizmek CDN for GSAP (Cloudflare is not on the approval list for Sizmek + Yahoo) -->
+    <!-- <script src="https://secure-ds.serving-sys.com/BurstingcachedScripts/libraries/greensock/1_17_0/TweenMax.min.js"></script> -->
+
+    <!-- Sizmek Library Click Through -->
+
+    <!--
+    <script src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+    <script type="text/javascript">
+        (!EB.isInitialized()) ? EB.addEventListener(EBG.EventName.EB_INITIALIZED, initSizmek) : initSizmek();
+
+        function initSizmek() {
+            document.getElementById("banner").addEventListener("click", function(e) {
+                EB.clickthrough();
+            }, false);
+        }
+    </script>
+    -->
+
+    <!-- DoubleClick Studio Library Click Through -->
+
+    <!--
+    <script src="https://s0.2mdn.net/ads/studio/Enabler.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        (!Enabler.isInitialized()) ? Enabler.addEventListener(studio.events.StudioEvent.INIT, initDCS) : initDCS();
+
+        function initDCS() {
+            document.getElementById("banner").addEventListener("click", function(e) {
+                Enabler.exit("HTML5_Background_Clickthrough");
+            }, false);
+        }
+    </script>
+    -->
+
+    <!-- Main -->
+    <script src="main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,98 @@
+* {
+    margin:0;
+}
+#banner {
+    width:300px;
+    height:250px;
+    display:block;
+    overflow:hidden;
+    position:relative;
+    background:#FECB30;
+    cursor:pointer;
+
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    border:rgb(145, 153, 153) 1px solid;
+}
+.asset {
+    top:0; right:0; bottom:0; left:0;
+    position:absolute;
+    visibility:hidden;
+}
+#lockup {
+    position:absolute;
+    bottom: -5px;
+}
+#clear {
+  clear: both;
+}
+/* footer */
+span.logos {
+  float: left;
+  z-index: 1;
+}
+span.cta {
+  float: right;
+}
+/* Frame 0 */
+#frame0-text {
+    margin: 45px auto 0;
+}
+/* Frame 1 */
+#frame1-text {
+  height: 22px;
+margin: 155px auto 0 40px;
+float: left;
+position: absolute;
+z-index: 1;
+}
+#frame1b-text {
+  height: 22px;
+    margin: 155px auto 0 150px;
+    float: right;
+    z-index: 1;
+    position: absolute;
+}
+#frame1-text-back {
+  height: 30px;
+background-color: #182260;
+position: relative;
+width: 120px;
+margin: 150px auto 0 34px;
+}
+#frame1-copy {
+    margin:34px auto;
+}
+#frame1-image {
+    margin:75px auto;
+}
+
+/* Frame 2 */
+
+#frame2-copy {
+    margin:34px auto;
+}
+#frame2-text {
+    margin:77px 20px auto;
+}
+#frame2-image {
+    margin:75px 20px 0 auto;
+}
+
+/* Frame 3 */
+
+#frame3-copy {
+    margin: 95px auto 0;
+    z-index: 1;
+}
+#frame3-yes {
+    margin: 130px auto 0;
+}
+
+/* Frame 4 */
+
+#frame4-copy {
+    margin: 70px auto 0 25px;
+    z-index: 1;
+}

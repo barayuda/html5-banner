@@ -1,0 +1,53 @@
+* {
+    margin:0;
+}
+#banner {
+    width:300px;
+    height:250px;
+    display:block;
+    overflow:hidden;
+    position:relative;
+    background:url(bg.jpg);
+    cursor:pointer;
+    
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    border:rgb(145, 153, 153) 1px solid;
+}
+.asset {
+    top:0; right:0; bottom:0; left:0;
+    position:absolute;
+    visibility:hidden;
+}
+#lockup {
+    position:absolute;
+    bottom: 0;
+}
+
+/* Frame 1 */
+
+#frame1-copy {
+    margin:34px auto;
+}
+#frame1-image {
+    margin:75px auto;
+}
+
+/* Frame 2 */
+
+#frame2-copy {
+    margin:34px auto;
+}
+#frame2-text {
+    margin:77px 20px auto;
+}
+#frame2-image {
+    margin:75px 20px 0 auto;
+}
+
+/* Frame 3 */
+
+#frame3-copy {
+    margin:95px auto;
+}
